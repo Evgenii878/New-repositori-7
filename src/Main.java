@@ -1,11 +1,17 @@
+
 public class Main {
     public static void main(String[] args) {
-        BonusMilesService service = new BonusMilesService();
-        int price = 10000;
-        int miles = service.calculate(price);
-        System.out.println(miles);
+        BmiService service = new BmiService();
+        double weight = 58;
+        double height = 1.65;
+        int bmiIndex = service.calculate(weight, height);
+        System.out.println("Индекс массы тела:" + bmiIndex);
     }
 }
+
+
+
+
 
 
 
